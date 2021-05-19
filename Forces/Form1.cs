@@ -78,5 +78,49 @@ namespace Forces
         {
             return (Math.Acos(x) * 180 / Math.PI);
         }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // remembers what the labels 
+                double CuboidL = double.Parse(textBox5.Text);
+                double CuboidH = double.Parse(textBox3.Text);
+                double CuboidW = double.Parse(textBox4.Text);
+                // works out the labels
+                double CuboidSA = (2 * CuboidL * CuboidW) + (2 * CuboidL * CuboidH) + (2 * CuboidW * CuboidH);
+                double CuboidVol = (CuboidW * CuboidL * CuboidH);
+                //posts the labels
+                label13.Text = "Surface Area =" + CuboidSA;
+                label14.Text =  " Volume =" + CuboidVol;
+            }
+
+            catch
+
+            {
+                MessageBox.Show("EH EH! Try again *****!");
+            }
+
+
+        } 
+        private void Label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TabPage2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label13_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

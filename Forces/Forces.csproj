@@ -83,5 +83,14 @@
   <ItemGroup>
     <None Include="Resources\Untitled.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1200px-Sphere_-_monochrome_simple.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
