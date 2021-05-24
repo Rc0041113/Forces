@@ -122,5 +122,49 @@ namespace Forces
         {
 
         }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // remembers what the labels 
+                double SphereR = double.Parse(textBox6.Text);
+                // works out the labels
+                double SphereVol = 1.333333333333333 * Math.PI * (SphereR * SphereR * SphereR);
+                double SphereSA = (4 * Math.PI) * (SphereR * SphereR);
+                //posts the labels
+                label12.Text = "Surface Area =" + SphereSA;
+                label15.Text = " Volume =" + SphereVol;
+            }
+            catch
+            {
+                MessageBox.Show("EH EH! Try again *****!");
+            }
+        }
+
+        private void PictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button4_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // remembers what the labels 
+                double ConeH = double.Parse(textBox8.Text);
+                double ConeR = double.Parse(textBox7.Text);
+                // works out the labels
+                double ConeVol = (Math.PI * (ConeR * ConeR) * (ConeH / 3));
+                double ConeSA = Math.PI * ConeR * (ConeR + (Math.Sqrt(ConeH * ConeH) + (ConeR * ConeR)));
+                //posts the labels
+                label11.Text = "Surface Area =" + ConeSA;
+                label16.Text = "Volume = " + ConeVol;
+            }
+            catch
+            {
+                MessageBox.Show("EH EH! Try again *****!");
+            }
+        }
     }
 }
